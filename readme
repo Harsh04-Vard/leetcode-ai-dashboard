@@ -12,7 +12,6 @@ An AI-powered LeetCode analytics and interview preparation platform built using 
 
 # 📸 Preview
 
-Add screenshots/GIFs here after deployment.
 
 ---
 
@@ -44,6 +43,15 @@ Generate personalized:
 Powered by:
 - Groq API
 - Llama 3 models
+
+---
+
+## 💬 AI Mentor Chat
+Interactive AI mentor for:
+- DSA guidance
+- Interview preparation
+- Topic recommendations
+- Problem-solving strategies
 
 ---
 
@@ -99,9 +107,12 @@ leetcode-dashboard/
 ├── recommender.py
 ├── heatmap.py
 ├── grok_ai.py
+├── chatbot.py
 ├── pdf_generator.py
 ├── style.css
 ├── requirements.txt
+├── README.md
+
 🚀 Installation
 1️⃣ Clone Repository
 git clone https://github.com/YOUR_USERNAME/leetcode-dashboard.git
@@ -109,9 +120,7 @@ git clone https://github.com/YOUR_USERNAME/leetcode-dashboard.git
 cd leetcode-dashboard
 3️⃣ Create Virtual Environment
 python -m venv .venv
-
-Activate:
-
+Activate Environment
 Windows
 .venv\Scripts\activate
 Mac/Linux
@@ -126,16 +135,17 @@ https://console.groq.com/keys
 
 Add API Key
 
-Inside:
+Create folder:
 
-grok_ai.py
+.streamlit/
 
-Replace:
+Inside create:
 
-api_key="YOUR_GROQ_API_KEY"
+secrets.toml
 
-with your actual API key.
+Add:
 
+GROQ_API_KEY = "your_actual_groq_api_key"
 ▶️ Run Project
 streamlit run app.py
 🎯 Future Improvements
@@ -144,13 +154,16 @@ Contest analytics
 User authentication
 Daily revision planner
 Progress tracking
-AI chat mentor
+AI chat mentor memory
 Deployment support
 📌 Resume Description
 
-Built an AI-powered LeetCode analytics platform with personalized DSA roadmap generation, interview readiness scoring, activity visualization, recommendation engine, and PDF export using Streamlit, Groq LLM APIs, and GraphQL.
+Built an AI-powered LeetCode analytics platform with personalized DSA roadmap generation, interview readiness scoring, activity visualization, AI mentor chatbot, recommendation engine, and PDF export using Streamlit, Groq LLM APIs, and GraphQL.
 
-⭐ Author: Harsh Vardhan
+👨‍💻 Author
+
+Harsh Vardhan
+
 ⭐ If You Like This Project
 
 Give it a star on GitHub ⭐

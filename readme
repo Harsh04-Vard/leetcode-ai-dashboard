@@ -12,7 +12,7 @@ An AI-powered LeetCode analytics and interview preparation platform built using 
 
 # 📸 Preview
 
-Add screenshots/GIFs here after deployment.
+_Add screenshots/GIFs here after deployment._
 
 ---
 
@@ -44,6 +44,15 @@ Generate personalized:
 Powered by:
 - Groq API
 - Llama 3 models
+
+---
+
+## 💬 AI Mentor Chat
+Interactive AI mentor for:
+- DSA guidance
+- Interview preparation
+- Topic recommendations
+- Problem-solving strategies
 
 ---
 
@@ -99,58 +108,123 @@ leetcode-dashboard/
 ├── recommender.py
 ├── heatmap.py
 ├── grok_ai.py
+├── chatbot.py
 ├── pdf_generator.py
 ├── style.css
 ├── requirements.txt
-🚀 Installation
-1️⃣ Clone Repository
+├── README.md
+```
+
+---
+
+# 🚀 Installation
+
+## 1️⃣ Clone Repository
+
+```bash
 git clone https://github.com/YOUR_USERNAME/leetcode-dashboard.git
-2️⃣ Open Project
+```
+
+---
+
+## 2️⃣ Open Project
+
+```bash
 cd leetcode-dashboard
-3️⃣ Create Virtual Environment
+```
+
+---
+
+## 3️⃣ Create Virtual Environment
+
+```bash
 python -m venv .venv
+```
 
-Activate:
+### Activate Environment
 
-Windows
+#### Windows
+```bash
 .venv\Scripts\activate
-Mac/Linux
+```
+
+#### Mac/Linux
+```bash
 source .venv/bin/activate
-4️⃣ Install Dependencies
+```
+
+---
+
+## 4️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
-🔑 Setup Groq API
+```
+
+---
+
+# 🔑 Setup Groq API
 
 Get API key from:
 
 https://console.groq.com/keys
 
-Add API Key
+---
 
-Inside:
+## Add API Key
 
-grok_ai.py
+Create folder:
 
-Replace:
+```bash
+.streamlit/
+```
 
-api_key="YOUR_GROQ_API_KEY"
+Inside create:
 
-with your actual API key.
+```bash
+secrets.toml
+```
 
-▶️ Run Project
+Add:
+
+```toml
+GROQ_API_KEY = "your_actual_groq_api_key"
+```
+
+---
+
+# ▶️ Run Project
+
+```bash
 streamlit run app.py
-🎯 Future Improvements
-Company-specific preparation
-Contest analytics
-User authentication
-Daily revision planner
-Progress tracking
-AI chat mentor
-Deployment support
-📌 Resume Description
+```
 
-Built an AI-powered LeetCode analytics platform with personalized DSA roadmap generation, interview readiness scoring, activity visualization, recommendation engine, and PDF export using Streamlit, Groq LLM APIs, and GraphQL.
+---
 
-⭐ Author: Harsh Vardhan
-⭐ If You Like This Project
+# 🎯 Future Improvements
+
+- Company-specific preparation
+- Contest analytics
+- User authentication
+- Daily revision planner
+- Progress tracking
+- AI chat mentor memory
+- Deployment support
+
+---
+
+# 📌 Resume Description
+
+Built an AI-powered LeetCode analytics platform with personalized DSA roadmap generation, interview readiness scoring, activity visualization, AI mentor chatbot, recommendation engine, and PDF export using Streamlit, Groq LLM APIs, and GraphQL.
+
+---
+
+# 👨‍💻 Author
+
+**Harsh Vardhan**
+
+---
+
+# ⭐ If You Like This Project
 
 Give it a star on GitHub ⭐

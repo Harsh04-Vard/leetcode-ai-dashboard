@@ -1,0 +1,117 @@
+/* ---------------- MAIN APP ---------------- */
+
+.stApp {
+    background-color: #0b1120;
+    color: #f8fafc;
+}
+
+/* ---------------- SIDEBAR ---------------- */
+
+section[data-testid="stSidebar"] {
+
+    background: linear-gradient(
+        180deg,
+        #111827,
+        #0f172a
+    );
+
+    border-right: 1px solid #1e293b;
+}
+
+/* ---------------- INPUT BOX ---------------- */
+
+.stTextInput input {
+
+    background-color: #0f172a;
+
+    color: white;
+
+    border-radius: 14px;
+
+    border: 1px solid #334155;
+
+    padding: 12px;
+}
+
+/* ---------------- METRIC CARDS ---------------- */
+
+[data-testid="metric-container"] {
+
+    background: linear-gradient(
+        145deg,
+        #111827,
+        #1e293b
+    );
+
+    border: 1px solid #334155;
+
+    padding: 20px;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.25);
+}
+
+/* ---------------- HEADINGS ---------------- */
+
+h1, h2, h3 {
+
+    color: white;
+
+    font-weight: 700;
+}
+
+/* ---------------- PROFILE IMAGE ---------------- */
+
+img {
+
+    border-radius: 18px;
+}
+
+/* ---------------- TABLE ---------------- */
+
+thead tr th {
+
+    background-color: #1e293b !important;
+
+    color: white !important;
+}
+
+tbody tr {
+
+    background-color: #0f172a !important;
+
+    color: white !important;
+}
+
+/* ---------------- ALERTS ---------------- */
+
+.stAlert {
+
+    border-radius: 16px;
+
+    border: none;
+}
+
+/* ---------------- CHART CONTAINER ---------------- */
+
+.js-plotly-plot {
+
+    background: #111827 !important;
+
+    border-radius: 18px;
+
+    padding: 10px;
+
+    box-shadow:
+        0 4px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------------- SPACING ---------------- */
+
+.block-container {
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}

@@ -1,17 +1,13 @@
 from openai import OpenAI
-import streamlit as st
+import os
 
-
-# ---------------- GROQ CLIENT ---------------- #
 
 client = OpenAI(
-    api_key=st.secrets["GROQ_API_KEY"],
+    api_key=os.getenv("GROQ_API_KEY"),
     base_url="https://api.groq.com/openai/v1",
     timeout=20
 )
 
-
-# ---------------- AI CHATBOT ---------------- #
 
 def ask_ai_mentor(user_question):
 
@@ -25,13 +21,6 @@ def ask_ai_mentor(user_question):
                     "role": "system",
                     "content": """
 You are an expert DSA mentor helping students prepare for coding interviews.
-
-Give:
-- concise answers
-- practical guidance
-- topic recommendations
-- interview tips
-- coding preparation strategies
 """
                 },
 
